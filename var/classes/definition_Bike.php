@@ -7,6 +7,8 @@
  *
  * Fields Summary:
  * - Title [input]
+ * - testCheckbox [checkbox]
+ * - testContent [fieldcollections]
  */
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
@@ -16,7 +18,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'title' => 'Bike',
    'description' => '',
    'creationDate' => NULL,
-   'modificationDate' => 1684317427,
+   'modificationDate' => 1684864376,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -46,11 +48,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
-         'title' => 'Layout',
+         'title' => '',
          'width' => '',
          'height' => '',
          'collapsible' => false,
@@ -60,46 +62,148 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
-             'name' => 'Title',
-             'title' => 'Title',
-             'tooltip' => '',
-             'mandatory' => true,
-             'noteditable' => false,
-             'index' => 1,
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'name' => 'General Data',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'General Data',
+             'width' => '',
+             'height' => '',
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'children' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'name' => 'Title',
+                 'title' => 'Title',
+                 'tooltip' => '',
+                 'mandatory' => true,
+                 'noteditable' => false,
+                 'index' => 0,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'fieldtype' => '',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+                 'blockedVarsForExport' => 
+                array (
+                ),
+                 'defaultValue' => NULL,
+                 'columnLength' => 190,
+                 'regex' => '',
+                 'regexFlags' => 
+                array (
+                ),
+                 'unique' => false,
+                 'showCharCount' => false,
+                 'width' => '',
+                 'defaultValueGenerator' => '',
+              )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
+                 'name' => 'testCheckbox',
+                 'title' => 'Test Checkbox',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => 0,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'fieldtype' => '',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+                 'blockedVarsForExport' => 
+                array (
+                ),
+                 'defaultValue' => 1,
+                 'defaultValueGenerator' => '',
+              )),
+            ),
              'locked' => false,
-             'style' => '',
-             'permissions' => NULL,
-             'fieldtype' => '',
-             'relationType' => false,
-             'invisible' => false,
-             'visibleGridView' => true,
-             'visibleSearch' => true,
              'blockedVarsForExport' => 
             array (
             ),
-             'defaultValue' => NULL,
-             'columnLength' => 190,
-             'regex' => '',
-             'regexFlags' => 
+             'fieldtype' => 'panel',
+             'layout' => NULL,
+             'border' => false,
+             'icon' => '',
+             'labelWidth' => 100,
+             'labelAlign' => 'left',
+          )),
+          1 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+             'name' => 'File Collections',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => 'File Collections',
+             'width' => '',
+             'height' => '',
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'children' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
+                 'name' => 'testContent',
+                 'title' => 'Test Content',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => 0,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'fieldtype' => '',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+                 'blockedVarsForExport' => 
+                array (
+                ),
+                 'allowedTypes' => 
+                array (
+                  0 => 'TestCollection',
+                ),
+                 'lazyLoading' => true,
+                 'maxItems' => NULL,
+                 'disallowAddRemove' => false,
+                 'disallowReorder' => false,
+                 'collapsed' => false,
+                 'collapsible' => false,
+                 'border' => false,
+              )),
+            ),
+             'locked' => false,
+             'blockedVarsForExport' => 
             array (
             ),
-             'unique' => false,
-             'showCharCount' => false,
-             'width' => '',
-             'defaultValueGenerator' => '',
+             'fieldtype' => 'panel',
+             'layout' => NULL,
+             'border' => false,
+             'icon' => '',
+             'labelWidth' => 100,
+             'labelAlign' => 'left',
           )),
         ),
          'locked' => false,
          'blockedVarsForExport' => 
         array (
         ),
-         'fieldtype' => 'panel',
-         'layout' => NULL,
+         'fieldtype' => 'tabpanel',
          'border' => false,
-         'icon' => '',
-         'labelWidth' => 100,
-         'labelAlign' => 'left',
+         'tabPosition' => 'top',
       )),
     ),
      'locked' => false,
