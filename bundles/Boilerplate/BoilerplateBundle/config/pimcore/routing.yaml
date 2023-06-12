@@ -1,0 +1,5 @@
+boilerplate_boilerplate:
+    resource: "@BoilerplateBoilerplateBundle/src/Controller/"
+    type:     annotation
+    prefix:   /
+

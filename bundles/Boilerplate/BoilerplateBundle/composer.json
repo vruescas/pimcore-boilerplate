@@ -1,0 +1,16 @@
+{
+  "name": "Boilerplatre/Boilerplate",
+  "type": "pimcore-bundle",
+  "autoload": {
+    "psr-4": {
+      "Boilerplate\\": ""
+    }
+  },
+  "extra": {
+    "pimcore": {
+      "bundles": [
+        "Boilperplate\\Boilperplate"
+      ]
+    }
+  }
+}
